@@ -1,0 +1,70 @@
+/* Estilo general de las tarjetas de productos */
+.card {
+    display: flex; /* Aplica el modelo de diseño flexbox para organizar los hijos en una columna o fila. */
+    flex-direction: column; /* Alinea los hijos (contenido de la tarjeta) en una columna. */
+    border: 1px solid #ddd; /* Aplica un borde delgado de 1px con color gris claro (#ddd). */
+    border-radius: 8px; /* Redondea las esquinas del contenedor con un radio de 8px. */
+    overflow: hidden; /* Oculta cualquier contenido que desborde los límites de la tarjeta. */
+    background: #fff; /* Establece el fondo de la tarjeta en blanco (#fff). */
+    box-shadow: 4px 2px 7px 5px rgba(0, 0, 0, 0.1); /* Agrega una sombra ligera para dar un efecto de elevación: la sombra se extiende 2px verticalmente, 4px difusa, con opacidad del 10%. */
+}
+
+/* Imagen dentro de la tarjeta */
+.card_img {
+    width: 100%; /* La imagen ocupará todo el ancho de su contenedor. */
+    height: 200px; /* Establece una altura fija de 200px para la imagen. */
+    object-fit: cover; /* Escala la imagen para cubrir el área sin deformarla. */
+}
+
+/* Contenedor del contenido textual de la tarjeta */
+.card_content {
+    padding: 15px; /* Añade un espacio interior de 15px alrededor del contenido. */
+    flex-grow: 1; /* Permite que este contenedor crezca para ocupar el espacio vertical disponible dentro de la tarjeta. */
+    display: flex; /* Aplica el diseño flexbox para organizar el contenido interno. */
+    flex-direction: column; /* Alinea los elementos internos en una columna. */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos. */
+}
+
+/* Título de la tarjeta */
+.card_title {
+    font-size: 1.25rem; /* Define un tamaño de fuente de 1.25rem (relativo al tamaño base de la fuente). */
+    margin: 0 0 10px 0; /* Elimina el margen superior e inferior excepto un margen inferior de 10px. */
+}
+
+/* Descripción del producto */
+.card_description {
+    font-size: 0.9rem; /* Establece un tamaño de fuente más pequeño, de 0.9rem. */
+    color: #555; /* Aplica un color gris oscuro al texto. */
+    margin: 0 0 10px 0; /* Elimina los márgenes laterales y superiores, dejando 10px en la parte inferior. */
+}
+
+/* Precio del producto */
+.card_price {
+    font-size: 1.2rem; /* Define un tamaño de fuente mayor para resaltar el precio. */
+    font-weight: bold; /* Hace que el texto del precio sea en negrita. */
+    color: #333; /* Establece un color gris más oscuro para el precio. */
+    margin: 0 0 10px 0; /* Elimina los márgenes laterales y superiores, dejando 10px en la parte inferior. */
+}
+
+/* Botón de la tarjeta */
+.card_button {
+    background: blueviolet; /* Color de fondo azul vibrante para el botón. */
+    color: #fff; /* Texto blanco en el botón. */
+    border: none; /* Elimina cualquier borde predeterminado del botón. */
+    padding: 10px; /* Añade espacio interno de 10px alrededor del texto. */
+    border-radius: 5px; /* Redondea las esquinas del botón con un radio de 5px. */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clicable. */
+    font-size: 1rem; /* Establece el tamaño del texto en 1rem. */
+}
+
+/* Efecto al pasar el cursor sobre el botón */
+.card_button:hover {
+    background: #0056b3; /* Cambia el color de fondo del botón a un azul más oscuro al pasar el cursor. */
+}
+
+/* Diseño responsivo para pantallas pequeñas */
+@media (max-width: 600px) {
+    .product_grid {
+        grid-template-columns: 1fr; /* Para pantallas de hasta 600px, ajusta la cuadrícula a una sola columna (1fr). */
+    }
+}

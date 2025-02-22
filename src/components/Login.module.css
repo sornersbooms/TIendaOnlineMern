@@ -1,0 +1,76 @@
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px 40px;
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.5); /* blueviolet shadow */
+    backdrop-filter: blur(10px);
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto; /* Centra el formulario horizontalmente */
+    text-align: center;
+}
+
+.form-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: blueviolet;
+}
+
+.form-container form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-container label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #000000;
+    font-size: 16px;
+    box-shadow: 0 0 10px blueviolet;
+}
+
+.form-container input:focus {
+    outline: none;
+    box-shadow: 0 0 10px blueviolet;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: blueviolet;
+    color: #121212;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-container button:hover {
+    background: #8a2be2; /* Slightly darker blueviolet */
+}
+
+
+
+
